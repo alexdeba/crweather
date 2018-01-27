@@ -33,7 +33,7 @@ private val TEXT_PAINT = Paint().apply {
     color = Color.GRAY
 }
 
-private val TEXT_LINE_HEIGHT = 20f
+private const val TEXT_LINE_HEIGHT = 20f
 
 operator fun Menu.iterator() = object : Iterator<android.view.MenuItem> {
     private var current = 0
@@ -75,7 +75,7 @@ private fun Canvas.drawChartAxes(chart: Chart) {
 }
 
 fun Canvas.drawChartLegend(chart: Chart) {
-    var textPosX = area.horizontalRange.portion(.9f)
+    val textPosX = area.horizontalRange.portion(.9f)
     var textPosY = TEXT_LINE_HEIGHT
     drawText("Updated at ${chart.timeMs.asTimeString}", textPosX, textPosY, TEXT_PAINT)
     for ((name, color, _) in chart.lines) {

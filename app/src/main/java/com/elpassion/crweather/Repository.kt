@@ -3,7 +3,7 @@ package com.elpassion.crweather
 
 object Repository {
 
-    internal val appid = "f08f5bce8d0fe0c0903f145a88d773f8"
+    internal const val appid = "f08f5bce8d0fe0c0903f145a88d773f8"
 
     /**
      * @throws IllegalStateException

@@ -14,9 +14,9 @@ import kotlinx.android.synthetic.main.navigation.*
 
 class MainActivity : AppCompatActivity() {
 
-    val adapter = ChartsAdapter()
+    private val adapter = ChartsAdapter()
 
-    lateinit var model: MainModel
+    private lateinit var model: MainModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

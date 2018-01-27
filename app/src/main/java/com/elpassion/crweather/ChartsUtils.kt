@@ -4,10 +4,10 @@ import android.graphics.Color
 import com.elpassion.crweather.OpenWeatherMapApi.DailyForecast
 import java.lang.Math.signum
 
-private val CACHE_TIME = 1000L * 60L * 60L // one hour
+private const val CACHE_TIME = 1000L * 60L * 60L // one hour
 
-private val BLUE_LIGHT = 0x220000FF
-private val BLACK_LIGHT = 0x22000000
+private const val BLUE_LIGHT = 0x220000FF
+private const val BLACK_LIGHT = 0x22000000
 
 
 val Float.asMeasurementString get() = "%.0f".format(this)
